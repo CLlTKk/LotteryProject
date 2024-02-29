@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lottery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.6.0/dist/web3.min.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Лотерея</a></li>
+            <li><a href="history.html">История</a></li>
+        </ul>
+        <button id="connectWallet">Подключить кошелек</button>
+        <p id="currentAddress"></p>
+    </nav>
+
+    <div class="col-cont">
+        <h1>Лотерея</h1>
+        <p id="pool">Пул: 0</p>
+        <div class="row-cont">
+            <button id="participate">Участвовать</button>
+            <button id="finishRound">Завершить раунд</button>
+        </div>
+        <p>Участники</p>
+        <div class="col-cont" id="playersList">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
